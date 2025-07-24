@@ -10,13 +10,17 @@ export default {
         modern: ['Poppins', 'Inter', 'sans-serif'],
       },
       colors: {
-        primary: '#6366f1',
-        accent: '#f472b6',
-        glass: 'rgba(255,255,255,0.15)',
-        darkGlass: 'rgba(30,41,59,0.7)',
+        primary: '#2563eb', // deep blue
+        accent: '#f59e42', // orange accent
+        glass: 'rgba(255,255,255,0.85)',
+        darkGlass: 'rgba(30,41,59,0.85)',
+        textMain: '#1e293b', // dark slate
+        textLight: '#f8fafc', // near white
+        bgMain: '#f1f5f9', // light gray
+        bgDark: '#1e293b', // dark slate
       },
       boxShadow: {
-        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.17)',
         neumorph: '8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff',
       },
       backdropBlur: {

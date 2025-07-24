@@ -64,25 +64,23 @@ const Home = () => {
             placeholder="Title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className={`${
-              pasteId ? "w-[80%]" : "w-[85%]"
-            } neumorph text-black border-none outline-none p-3 text-lg transition-all duration-200 focus:ring-2 focus:ring-primary`}
+            className={`${pasteId ? "w-[80%]" : "w-[85%]"} neumorph text-textMain border-none outline-none p-3 text-lg transition-all duration-200 focus:ring-2 focus:ring-primary`}
           />
           <button
-            className="bg-primary hover:bg-accent text-white font-bold rounded-lg px-6 py-2 shadow-glass transition-all duration-200 focus:ring-4 focus:ring-accent/40"
+            className="bg-primary hover:bg-accent text-textLight font-bold rounded-lg px-6 py-2 shadow-glass transition-all duration-200 focus:ring-4 focus:ring-accent/40"
             onClick={createPaste}
           >
             {pasteId ? "Update Paste" : "Create My Paste"}
           </button>
           {pasteId &&  <button
-            className="bg-accent hover:bg-primary text-white font-bold rounded-lg px-4 py-2 shadow-glass transition-all duration-200"
+            className="bg-accent hover:bg-primary text-textLight font-bold rounded-lg px-4 py-2 shadow-glass transition-all duration-200"
             onClick={resetPaste}
           >
             <PlusCircle size={20} />
           </button>}
         </div>
         <div className="w-full flex flex-col items-start relative glass-card animate-fade-in">
-          <div className="w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-white/10">
+          <div className="w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-bgDark/10">
             <div className="w-full flex gap-x-[6px] items-center select-none group">
               <div className="w-[13px] h-[13px] rounded-full bg-red-400" />
               <div className="w-[13px] h-[13px] rounded-full bg-yellow-300" />
@@ -90,7 +88,7 @@ const Home = () => {
             </div>
             <div className="w-fit flex items-center gap-x-2 px-2">
               <button
-                className="flex justify-center items-center group hover:scale-110 transition"
+                className="flex justify-center items-center group hover:scale-110 transition text-textMain"
                 onClick={() => {
                   navigator.clipboard.writeText(value);
                   toast.success("Copied to Clipboard", { position: "top-right" });
@@ -104,8 +102,8 @@ const Home = () => {
             value={value}
             onChange={(e) => setValue(e.target.value)}
             placeholder="Write Your Content Here...."
-            className="w-full p-4 bg-transparent text-black text-lg outline-none resize-none min-h-[300px] focus:ring-0"
-            style={{ caretColor: "#6366f1" }}
+            className="w-full p-4 bg-transparent text-textMain text-lg outline-none resize-none min-h-[300px] focus:ring-0"
+            style={{ caretColor: "#2563eb" }}
             rows={16}
           />
         </div>

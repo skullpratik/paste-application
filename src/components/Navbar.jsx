@@ -16,15 +16,15 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-accent font-semibold text-lg border-b-2 border-accent pb-1 transition"
-                : "text-white font-medium text-lg hover:text-accent transition"
+                : "text-textMain font-medium text-lg hover:text-accent transition"
             }
           >
             {link.title}
           </NavLink>
         ))}
         {/* Dark/Light mode toggle placeholder */}
-        <button className="ml-4 w-8 h-8 rounded-full bg-white/20 hover:bg-accent transition flex items-center justify-center" title="Toggle theme">
-          <span className="text-xl">🌓</span>
+        <button className="ml-4 w-8 h-8 rounded-full bg-bgDark/10 hover:bg-accent transition flex items-center justify-center" title="Toggle theme">
+          <span className="text-xl text-textMain">🌓</span>
         </button>
       </div>
     </nav>

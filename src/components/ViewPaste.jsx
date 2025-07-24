@@ -22,10 +22,10 @@ const ViewPaste = () => {
           placeholder="Title"
           value={paste.title}
           disabled
-          className="w-full neumorph text-black border-none outline-none p-3 text-lg mb-2"
+          className="w-full neumorph text-textMain border-none outline-none p-3 text-lg mb-2"
         />
-        <div className="w-full flex flex-col items-start relative glass-card animate-fade-in">
-          <div className="w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-white/10">
+        <div className="w-full flex flex-col items-start relative glass-card animate-fade-in text-textMain">
+          <div className="w-full rounded-t flex items-center justify-between gap-x-4 px-4 py-2 border-b border-bgDark/10">
             <div className="w-full flex gap-x-[6px] items-center select-none group">
               <div className="w-[13px] h-[13px] rounded-full bg-red-400" />
               <div className="w-[13px] h-[13px] rounded-full bg-yellow-300" />
@@ -33,7 +33,7 @@ const ViewPaste = () => {
             </div>
             <div className="w-fit flex items-center gap-x-2 px-2">
               <button
-                className="flex justify-center items-center group hover:scale-110 transition"
+                className="flex justify-center items-center group hover:scale-110 transition text-textMain"
                 onClick={() => {
                   navigator.clipboard.writeText(paste.content);
                   toast.success("Copied to Clipboard");
@@ -47,8 +47,8 @@ const ViewPaste = () => {
             value={paste.content}
             disabled
             placeholder="Write Your Content Here...."
-            className="w-full p-4 bg-transparent text-black text-lg outline-none resize-none min-h-[300px] focus:ring-0"
-            style={{ caretColor: "#6366f1" }}
+            className="w-full p-4 bg-transparent text-textMain text-lg outline-none resize-none min-h-[300px] focus:ring-0"
+            style={{ caretColor: "#2563eb" }}
             rows={16}
           />
         </div>
