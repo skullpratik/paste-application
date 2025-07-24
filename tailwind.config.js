@@ -12,12 +12,12 @@ export default {
       colors: {
         primary: '#2563eb', // deep blue
         accent: '#f59e42', // orange accent
-        glass: 'rgba(30,41,59,0.7)', // cooler, less bright glass
-        darkGlass: 'rgba(30,41,59,0.85)',
-        textMain: '#e2e8f0', // light gray text for dark glass
-        textLight: '#f8fafc', // near white
-        bgMain: '#cbd5e1', // soft mid-gray
-        bgDark: '#1e293b', // dark slate
+        glass: 'rgba(30,41,59,0.85)', // dark glass
+        darkGlass: 'rgba(17,24,39,0.95)', // even darker glass
+        textMain: '#f8fafc', // light text
+        textLight: '#f8fafc', // light text
+        bgMain: '#1e293b', // dark slate
+        bgDark: '#0f172a', // very dark slate
       },
       boxShadow: {
         glass: '0 8px 32px 0 rgba(31, 38, 135, 0.17)',

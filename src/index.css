@@ -8,18 +8,18 @@ body {
 }
 
 .glass-card {
-  @apply bg-glass shadow-glass backdrop-blur-md rounded-xl border border-bgDark/10 text-textMain;
+  @apply bg-glass shadow-glass backdrop-blur-md rounded-xl border border-bgDark/40 text-textMain;
 }
 
 .neumorph {
-  box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
-  background: #f8fafc;
+  box-shadow: 8px 8px 16px #0f172a, -8px -8px 16px #334155;
+  background: #1e293b;
   border-radius: 1rem;
-  color: #1e293b;
+  color: #f8fafc;
 }
 
 .animated-bg {
-  background: linear-gradient(120deg, #f1f5f9 0%, #2563eb 60%, #f59e42 100%);
+  background: linear-gradient(120deg, #1e293b 0%, #2563eb 60%, #334155 100%);
   background-size: 200% 200%;
   animation: gradient-move 6s ease-in-out infinite;
 }
