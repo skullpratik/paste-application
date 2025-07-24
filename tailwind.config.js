@@ -12,11 +12,11 @@ export default {
       colors: {
         primary: '#2563eb', // deep blue
         accent: '#f59e42', // orange accent
-        glass: 'rgba(255,255,255,0.85)',
+        glass: 'rgba(30,41,59,0.7)', // cooler, less bright glass
         darkGlass: 'rgba(30,41,59,0.85)',
-        textMain: '#1e293b', // dark slate
+        textMain: '#e2e8f0', // light gray text for dark glass
         textLight: '#f8fafc', // near white
-        bgMain: '#f1f5f9', // light gray
+        bgMain: '#cbd5e1', // soft mid-gray
         bgDark: '#1e293b', // dark slate
       },
       boxShadow: {
